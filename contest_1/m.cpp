@@ -15,9 +15,7 @@ int main() {
     std::cin >> a[i];
     total += a[i];
 
-    if (a[i] > max_a) {
-      max_a = a[i];
-    }
+    max_a = std::max(max_a, a[i]);
   }
 
   if (k > total) {
