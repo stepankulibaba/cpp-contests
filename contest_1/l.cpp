@@ -31,7 +31,7 @@ int main() {
   int left = 0;
   int right = cN;
   while (left < right) {
-    const int cMiddle = left + (right - left + 1) / 2;
+    const int cMiddle = left + ((right - left + 1) / 2);
     if (contains_t_after(cMiddle)) {
       left = cMiddle;
     } else {
